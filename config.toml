@@ -1,0 +1,7 @@
+baseURL = "https://xorgatedotcom.github.io"
+languageCode = "en-us"
+title = "xor-gate"
+theme = "tale"
+
+[params]
+tagline = "Weekly HN digests"

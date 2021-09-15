@@ -1,0 +1,10 @@
+		<footer>
+			{{ if and .Params.comments (gt (len .Site.DisqusShortname) 0) }}
+            <figure class="article-discussion">
+              {{ template "_internal/disqus.html" . }}
+            </figure>
+			{{ end }}
+			<span>
+				Feel free to <a href="mailto:xorgate@gmx.com">scream into the void</a>.
+			</span>
+		</footer>
