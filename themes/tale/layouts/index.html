@@ -9,6 +9,7 @@
 		{{ end }}
 	</div>
 
+	{{ if gt .Paginator.TotalPages 1 }}
 	<div class="pagination">
 		{{ if .Paginator.HasPrev }}
 			<a href="{{ .Paginator.Prev.URL }}" class="left arrow">&#8592;</a>
@@ -19,6 +20,7 @@
 
 		<span>{{ .Paginator.PageNumber }}</span>
 	</div>
+	{{ end }}
 </main>
 
 {{ end }}
